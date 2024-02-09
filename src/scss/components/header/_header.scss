@@ -1,0 +1,52 @@
+@import "../buttons/btnNav";
+@import "../buttons/btnPost";
+
+@import "../users/userHeader";
+
+@import "../header/logo";
+
+.header {
+  @include flex(column, nowrap, center, end);
+  width: 31%;
+  border-right: 1px solid #2f3336;
+  .fifty {
+    width: 275px;
+    height: 100%;
+    padding: 0 8px;
+
+    @include flex(column, nowrap, space-between, stretch);
+    .navSection {
+      .nav {
+        .btnContainer {
+          @include flex(column, nowrap, center, start);
+          margin-top: 2px;
+          margin-bottom: 4px;
+
+          a {
+            width: 100%;
+            text-decoration: none;
+            &:hover {
+              .btn {
+                background-color: #191919;
+              }
+            }
+
+            .btn {
+              @include flex(row, nowrap, space-evely, start);
+              width: max-content;
+              margin: 4px 0;
+              padding: 0.61rem 2rem 0.61rem 0.67rem;
+              border-radius: 50px;
+
+              span {
+                font-size: 25px;
+                color: white;
+                margin-right: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

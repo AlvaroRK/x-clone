@@ -1,0 +1,30 @@
+.user{
+    @include flex(row, nowrap, space-between, center);
+    padding: .6rem;
+    border-radius: 50px;
+    &:hover{
+        background-color: #191919;
+    }
+    color: white;
+
+    .imgCont{
+        width: 40px;
+        
+
+        img{
+            border-radius: 50px;
+            width: 100%;
+        }
+    }
+
+    .names{
+        font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        .name{
+            font-weight: bold;
+            color: rgb(231, 233, 234);
+        }
+        .username{
+            color: rgb(113, 118, 123);
+        }
+    }
+}

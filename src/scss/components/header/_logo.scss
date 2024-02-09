@@ -1,0 +1,16 @@
+.logoContainer{
+    max-width: 100%;
+    padding: 2px 0;
+    .logo{
+        width: max-content;
+        @include flex(row, nowrap, start, center);
+        padding: .67rem;
+        border-radius: 100px;
+        color: white;
+        font-size: 30px;
+    
+        &:hover{
+            background-color: #191919;
+        }
+    }
+}

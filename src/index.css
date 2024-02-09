@@ -1,5 +1,198 @@
-*{
+.btnNav {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.btnPostContainer {
+  margin: 4px 0;
+  width: 90%;
+}
+.btnPostContainer .btnPost {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+  background-color: #1A8CD8;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6rem;
+  border-radius: 50px;
+  color: white;
+}
+.user:hover {
+  background-color: #191919;
+}
+.user .imgCont {
+  width: 40px;
+}
+.user .imgCont img {
+  border-radius: 50px;
+  width: 100%;
+}
+.user .names {
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.user .names .name {
+  font-weight: bold;
+  color: rgb(231, 233, 234);
+}
+.user .names .username {
+  color: rgb(113, 118, 123);
+}
+
+.logoContainer {
+  max-width: 100%;
+  padding: 2px 0;
+}
+.logoContainer .logo {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.67rem;
+  border-radius: 100px;
+  color: white;
+  font-size: 30px;
+}
+.logoContainer .logo:hover {
+  background-color: #191919;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 31%;
+  border-right: 1px solid #2f3336;
+}
+.header .fifty {
+  width: 275px;
+  height: 100%;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.header .fifty .navSection .nav .btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+.header .fifty .navSection .nav .btnContainer a {
+  width: 100%;
+  text-decoration: none;
+}
+.header .fifty .navSection .nav .btnContainer a:hover .btn {
+  background-color: #191919;
+}
+.header .fifty .navSection .nav .btnContainer a .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evely;
+      -ms-flex-pack: space-evely;
+          justify-content: space-evely;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 4px 0;
+  padding: 0.61rem 2rem 0.61rem 0.67rem;
+  border-radius: 50px;
+}
+.header .fifty .navSection .nav .btnContainer a .btn span {
+  font-size: 25px;
+  color: white;
+  margin-right: 1.2rem;
+}
+
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
 }
